@@ -1,0 +1,64 @@
+* {
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.6);
+    inset: 0;
+    transition-duration: 0.6s;
+    opacity: 0;
+}
+
+.image:hover .layer{
+    opacity: 1;
+}
+
+body {
+    background-image: linear-gradient(#000046, #1cb5e0);
+}
+
+i {
+    cursor: pointer;
+}
+
+i#closeButton {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+i#closeButton:hover {
+    color: red;
+}
+
+i#nextButton,
+i#previousButton {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+i#nextButton:hover,
+i#previousButton:hover {
+    color: #1cb5e0;
+}
+
+.container {
+    width: 85%;
+}
+
+.container .image p {
+    color: white;
+    top: 80%;
+}
+
+#mainImgBox {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#mainImg {
+    background-image: url(/wallpapers/123.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 500px;
+}
